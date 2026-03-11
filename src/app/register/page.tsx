@@ -36,6 +36,7 @@ export default function RegisterPage() {
             player_name: form.name,
             player_email: form.email,
             to_email: 'odi.ribeiro@gmail.com',
+            app_url: process.env.NEXT_PUBLIC_APP_URL || window.location.origin,
           }, publicKey);
         }
       } catch {
